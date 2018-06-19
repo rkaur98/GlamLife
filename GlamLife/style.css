@@ -1,0 +1,603 @@
+/*
+Theme Name: GlamLife
+Author: Rupinder98
+Description: Final Project
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro:300,400,500|Days+One|El+Messiri:400,500,600|Flamenco|Lobster|Megrim|Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Lobster');
+
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+header{
+	background-color: aliceblue;	
+	box-shadow: 0 0 20px black;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 25px;
+	z-index: 10;
+}
+
+.sticky{
+	position: fixed;
+	width: 100%;
+	top: 0;
+  	height: auto;
+  	display: flex;
+}
+
+.sticky h1{
+	font-size: 3em;
+}
+
+.sticky .logo{
+	width: 80px;
+	height: auto;
+}
+
+header h1{
+	flex-basis: 60%;
+	flex-grow: 1;
+	color: #ff0066;
+	font-size: calc(2vw + 3em);
+	font-family: "El Messiri";
+	font-weight: 400;
+	
+}
+
+.logo{
+	width: 150px;
+	height: auto;
+}
+
+nav ul li{
+	text-decoration: none;
+	list-style-type: none;
+	margin: 0;
+	color: #ff0066;
+	font-size: 1.2em;
+	font-family: "Inconsolata";
+	font-weight: 400;
+}
+
+.menu-item-112 a{
+	font-family: "Inconsolata";
+}
+
+nav{
+	flex-basis: 25%;
+	flex-grow: 1;
+}
+
+nav .menu{
+
+	display: flex;
+	justify-content: space-around;
+}
+
+.sub-menu{
+	display: none;
+	position: absolute;
+	background: white;
+	padding: 5px 0;
+}
+
+.sub-menu li{
+	font-size: 1em;
+}
+
+.sub-menu li a{
+	display: block;
+	font-size: 1rem;
+	color: grey;
+	padding: 0 10px;
+}
+
+.sub-menu li a:hover{
+	color: #ff0066;
+	background-color: #eee;
+}
+
+.expanded{
+	display: block;
+	z-index: 2;
+}
+
+.menu-item-112 a{
+	margin-right: 5px;
+}
+
+.home main{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 10px;
+}
+
+.home .sub-heading{
+	flex-basis: 100%;
+	text-align: center;
+    border-bottom: 2px solid #bbb;
+    line-height: 0;
+    padding: 0;
+    margin: 60px 0 50px 0;
+    color: #ff0066;
+}
+
+.home .sub-heading span{
+	background: #fff;
+    padding: 0 15px;
+    font-size: 2em;
+    font-family: "El Messiri";
+	font-weight: 400;
+}
+
+.home main article{
+	flex-basis: 15%;
+	margin: 1%;
+	width: 15%;
+	flex-grow: 1;
+	background-color: aliceblue;	
+	box-shadow: 0 0 20px black;
+	padding: 15px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+}
+
+
+.home main article img{
+	width: 100px;
+	height: auto;
+	overflow: hidden;
+
+	object-fit: cover;
+	object-position: 10% 30%;
+}
+
+.home main article h2{
+	font-size: 2em;
+	font-family: "Inconsolata";
+	font-weight: 400;
+	margin-top: 10px;
+}
+
+.home .gallery{
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.home .gallery div{
+	flex-basis: 25%;
+	height: 260px;
+	margin: 1%;
+	flex-grow: 1;
+	background-color: aliceblue;	
+	box-shadow: 0 0 20px black;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.home .gallery div img{
+	width: 150px;
+	height: 150px;
+	padding-top: 5px;
+	overflow: hidden;
+
+	object-fit: cover;
+	object-position: 10% 30%;
+}
+
+.home .gallery div h3{
+	color: #ff0066;
+	font-size: 1.5em;
+	font-family: "Inconsolata";
+	font-weight: 500;
+	margin-top: 10px;
+}
+
+a.slidemin, a.slidemax{
+	font-size: 2em;
+	margin: 3px;
+}
+
+.featured{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+
+
+.single-post main>*{
+	padding: 5px 0;
+}
+
+.single-post main p a{
+	color: #00e6e6;
+}
+
+.single-post main h2 a{
+	color: black;
+	font-size: 3em;
+	font-family: "El Messiri";
+	font-weight: 400;
+}
+
+.single-post main{
+	width: 75%;
+	float: right;
+	background-color: white;
+	border: 1px solid #00e6e6;
+	margin: 5px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.single-post footer{
+	width: 78%;
+	float: right;
+}
+
+.single-post .attachment-post-thumbnail{
+	left: 0;
+	bottom: 0;
+	position: relative;
+	object-fit: cover;
+	width: 25%;
+	height: auto;
+	position: fixed;
+	z-index: -1;
+	padding: 0;
+
+}
+
+
+
+a{
+	text-decoration: none;
+	color: #ff0066;
+	
+}
+
+.single-post main .navigate a{
+	font-size: 1.5rem;
+	font-family: "Inconsolata";
+	font-weight: 500;
+}
+
+.single-post main p{
+	font-family: "Flamenco";
+    font-size: 1.5rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+#productdes{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.proddes{
+	flex-basis: 20%;
+	width: 20%;
+	height: 320px;
+	flex-grow: 1;
+	background-color: aliceblue;	
+	box-shadow: 0 0 5px black;
+	padding: 10px 5px;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.add-cart{
+	background-color: #ff0066;
+	color: white;
+	height: 30px;
+	width: 150px;
+}
+
+.proddes h3{
+	color: #ff0066;
+	font-size: 1.1em;
+	font-family: "Inconsolata";
+	font-weight: 550;
+}
+
+.proddes .price{
+	font-size: 1.3rem;
+	font-family: "Flamenco";
+}
+
+.image{
+	width: 150px;
+	height: auto;
+}
+
+.image img{
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+
+	object-fit: cover;
+	object-position: 10% 30%;
+}
+
+
+#color div{
+	width: 40px;
+	height: 40px;
+}
+
+#color{
+	display: flex;
+	height: 40px;
+	align-items: center;
+}
+
+.searchbrand{
+	width: 200px;
+	text-align: center;
+	align-self: flex-end;
+	margin-right: 50px;
+	background-color: #ff0066;
+	color: white;
+}
+
+.input{
+	height: 30px;
+	margin-right: 5px;
+}
+
+.brandsearch{
+	flex-basis: 50%;
+	flex-direction: column;
+	align-items: center;
+	display: none;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(214, 214, 214);
+	overflow: auto;
+    white-space: nowrap;
+    padding: 15px 0;
+    position: absolute;
+}
+
+.brandsearch a{
+	text-decoration: none;
+	color: #ff0066;
+	font-size: 1.5rem;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-family: "Inconsolata";
+	font-weight: 600;
+}
+
+.brandsearch a:hover{
+	background-color: white;
+}
+
+.show{
+	display: flex;
+}
+
+
+
+
+.page-id-29 main{
+	width: 75%;
+	margin: 0 auto;
+}
+
+.page-id-29 #header h1{
+	color: #ff0066;
+	font-size: calc(2vw + 3em);
+	font-family: "El Messiri";
+	font-weight: 400;
+	text-align: center;
+}
+
+.page-id-29 #header h2{
+	font-size: 1.5em;
+	font-family: "Flamenco";
+	text-align: center;
+}
+
+.page-id-109 main{
+	width: 75%;
+	margin: 0 auto;
+}
+
+
+.page-id-109 footer{
+	padding: 100px 0;
+}
+
+footer{
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 25px;
+	border-top: 1px solid grey;
+	padding: 50px 0;
+	box-sizing: border-box;
+}
+
+
+footer h1{
+	color: #ff0066;
+	font-size: calc(2vw + 1.5em);
+	font-family: "El Messiri";
+	font-weight: 400;
+}
+
+footer h2{
+	font-size: 1.5em;
+	font-family: "Flamenco";
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+footer .icon-location, footer .icon-phone{
+	color: black;
+	font-size: 1.2em;
+	font-family: "Flamenco";
+}
+
+footer ul{
+	list-style-type: none;
+	margin: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.hidden{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+.metaslider{
+	margin: 0 auto;
+}
+
+
+
+
+
+/*================================== Media Queries ==================================================================*/
+
+@media screen and (max-width: 480px){
+
+	nav{
+		padding-bottom: 10px;
+	}
+
+	.home .sub-heading span{
+		font-size: 1.5em;
+	}
+
+	.home main article{
+		flex-basis: 35%;
+		width: 35%;
+	}
+
+	.home .gallery{
+		width: 80%;
+	}
+
+	.home .gallery div{
+		flex-basis: 40%;
+		width: 40%;
+		height: 200px;
+		margin-bottom: 10px;
+		padding: 5px;
+	}
+
+	.home .gallery div img{
+		width: 120px;
+		height: 120px;
+	}
+
+	.home .gallery div h3{
+		font-size: 1.1em;
+	}
+
+	.single-post .attachment-post-thumbnail{
+		display: none;
+	}
+
+	.single-post main{
+		width: 90%;
+	}
+
+	.single-post footer{
+		width: 90%;
+		float: none;
+	}
+
+	.proddes{
+		flex-basis: 80%;
+		width: 80%;
+		height: 320px;
+	}
+
+	footer{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	footer div{
+		margin-bottom: 30px;
+	}
+
+}
+
+@media screen and (min-width: 480px){
+	.proddes{
+		flex-basis: 40%;
+		width: 40%;
+		height: 320px;
+	}
+
+	.home .gallery{
+		width: 80%;
+	}
+	
+}
+
+@media screen and (min-width: 1024px){
+
+	.proddes{
+		flex-basis: 20%;
+		width: 20%;
+		height: 320px;
+	}
+
+	
+
+}
+
